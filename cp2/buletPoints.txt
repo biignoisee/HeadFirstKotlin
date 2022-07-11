@@ -1,0 +1,162 @@
+Variable like a cup
+	Varible names	
+	If this be reused or not?
+	type of variable it is
+
+The value of variable transform into an object
+	var x = 5
+
+compiler infers in value about type 	-> variable holds a reference to the object
+
+
+Var vs Val
+
+Val never can replace value after declare one time
+Var can replace value 
+
+Kotlin basics type
+
+Integers: byte(-128 - 127), short, int(-2,147... - 2,147,...), long
+
+For long number 	var hugeNumber = 6L
+
+binary number 	var x = 0b10
+hexadecimal number	var y = 0xAB
+
+Floats: Float(32 bits) and Double(64 bits)
+
+var x = 123.5F
+
+
+Boolean: True or False
+
+Strings: Char or String
+
+Compiler decide what type of variable is
+
+
+How to explicitly declare a variable tyype??
+Example
+
+	var smallNum: Short
+	var tinyNum: Byte
+
+Declare and asign
+	var z: Short = 6
+
+DUDE
+
+var x = 5		->	Tanto x and y contien reference to the same object
+var y = x
+
+var z: Long = x -> 	Crear nueva variable pero con tipo Long pero es imposible asignar el valor de x porque no son del mismo tipo
+
+
+WE NEED TO COVERT THE VALUE
+
+An object has state(estado) and behavior(comportamiento)
+
+var x = 5
+var z: Long = x.toLong() 	-> Use dot operator '.to...()' -> every numeric type ints como floats
+
+
+var x = 42L
+var y: Int = x.toInt() 		El valor sera 42, no 42L, imposible que queme mucho en una copa pequeña
+
+
+var x = 123.456
+var y: Int = x.toInt()		Value is 123
+
+name variable -> camelCassel
+--------------------------------------------------------------------------------------------------------
+
+Arraysss
+
+Store multiple values into one variable
+
+var myArray = arrayOf (1, 2, 3)
+
+println(myArray[0]) 	-> 1
+myArray.size 	-> size array 3
+
+
+
+
+
+
+REMEMBER:
+
+In order to create a variable, the compiler needs to know its name, its type, and whether
+it can be reused.
+If the variable’s type isn’t explicitly defined, the compiler infers it from its value.
+A variable holds a reference to an object.
+An object has state and behavior. Its behavior is exposed through its functions.
+Defining the variable with var means the variable’s object reference can be replaced.
+Defining the variable with val means the variable holds a reference to the same object
+forever.
+Kotlin has a number of basic types: Byte, Short, Int, Long, Float, Double, Boolean,
+Char and String.
+Explicitly define a variable’s type by putting a colon after the variable’s name, followed
+by the type:
+var tinyNum: Byte
+You can only assign a value to a variable that has a compatible type.
+You can convert one numeric type to another. If the value won’t fit into the new type,
+some precision is lost.
+Create an array using the arrayOf function: var myArray = arrayOf(1, 2, 3)
+Access an array’s items using, for example, myArray[0]. The first item in an array has
+an index of 0.
+Get an array’s size using myArray.size.
+The compiler infers the array’s type from its items. You can explicitly define an array’s
+type like this:
+var myArray: Array<Byte>
+If you define an array using val, you can still update the items in the array.
+String templates provide a quick and easy way of referring to a variable or evaluating
+an expression from inside a String.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
