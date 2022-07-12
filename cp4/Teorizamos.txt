@@ -1,0 +1,65 @@
+Classes are templates that allow you create your own types object
+Design and define classes
+Create new types of objects
+
+A class is a template that defines what properties and functions are associated with objects of that type.
+
+The things and object can do are its functions ->	methods
+The things and object knows about itself are its properties
+
+
+class Dog (val name: String, var weight: Int, val breed: String) {
+	fun bark() {
+		println(if (weight < 20) "Yip!" else "Wof!")		
+	}
+}
+
+
+One class references Objects 			Many many objects
+
+Usaremos la clase Dog para crear Objetos
+var myDog = Dog("Fido", 65, "Mixed")
+
+access object
+println(myDog.name)
+println(myDog.weight)
+println(myDog.breed)
+
+Create Array with object into
+var dogs = arrayof(Dog("Fido", 65, "Mixed"), Dog("Lucas", 15, "Poodle"))
+
+access object into array
+dogs[1].weight = 20 		//cambiamos el valor de Lucas su peso
+dogs[1].bark()
+
+Classes let you define your own types.
+A class is a template for an object. One class can create many objects.
+The things an object knows about itself are its properties. The things an object can do
+are its functions.
+A property is a variable that’s local to the class.
+The class keyword defines a class.
+Use the dot operator to access an object’s properties and functions.
+A constructor runs when you initialize an object.
+You can define a property in the primary constructor by prefixing a parameter with val
+or var. You can define a property outside the constructor by adding it to the class body.
+Initializer blocks run when an object is initialized.
+You must initialize each property before you use its value.
+Getters and setters let you get and set property values.
+Behind the scenes, the compiler adds a default getter and setter to every property.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
