@@ -1,0 +1,70 @@
+SubClasses and Superclasses
+great solution for polymorphism
+
+
+Inheritance helps you avoid duplicate code
+
+The class that contains the common code is called the superclass, and the classes that inherit from it
+are called subclasses.
+
+Example Car and ConvertibleCar
+
+Car: propetiers make, model  	functions: accelerate, applyBrake changeTemperature
+ConvertibleCar: propetiers make, model  	functions: accelerate, applyBrake changeTemperature AND more ...
+
+
+A superclass contains common properties and functions that are inherited by one or more
+subclasses.
+A subclass can include extra properties and functions, and can override the things that it
+inherits.
+
+Relationships with IS-A   	OR 	HAS-A
+
+Inheranci -> herencia
+
+Persona -> musico ->: bajita, pianista, guitarrista
+
+
+
+
+
+Bullet Points
+
+
+A superclass contains common properties and functions that are inherited by one or more
+subclasses.
+A subclass can include extra properties and functions that aren’t in the superclass, and
+can override the things it inherits.
+Use the IS-A test to verify that your inheritance is valid. If X is a subclass of Y, then X ISA
+Y must make sense.
+The IS-A relationship works in only one direction. A Hippo is an Animal, but not all
+Animals are Hippos.
+
+
+If class B is a subclass of class A, and class C is a subclass of class B, class C passes the
+IS-A test for both B and A.
+Before you can use a class as a superclass, you must declare it open. You must also
+declare any properties and functions you want to override as open.
+Use : to specify a subclass’s superclass.
+If the superclass has a primary constructor, then you must call it in the subclass header.
+Override properties and functions in the subclass by prefixing them with override.
+When you override a property, its type must be compatible with that of the superclass
+property. When you override a function, its parameter list must stay the same, and its
+return type must be compatible with that of the superclass.
+
+
+
+
+Overridden functions and properties stay open until they’re declared final.
+When a function is overridden in a subclass, and that function is invoked on an instance
+of the subclass, the overridden version of the function is called.
+Inheritance guarantees that all subclasses have the functions and properties defined in the
+superclass.
+You can use a subclass in any place where the superclass type is expected.
+Polymorphism means “many forms”. It allows different subclasses to have different
+implementations of the same function.
+
+
+
+
+
